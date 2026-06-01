@@ -1,9 +1,6 @@
 <?php 
-    $user = 'root';
-    $host = 'localhost';
-    $base = 'ispgombe';
-    $motpasse = 'willy1234willy';
-    $pdo = new PDO("mysql:host=$host;dbname=$base",$user,$motpasse);
+   
+    $pdo = new PDO("mysql://root:GjuJdPzwOtsaPbRgNEjItijqatwNDezh@shortline.proxy.rlwy.net:43045/railway");
    if (!$pdo){
     echo '
         <script> alert("quelque chose s est mal passé") </script>
