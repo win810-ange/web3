@@ -1,0 +1,12 @@
+.git
+.gitignore
+.vscode
+scss
+*.map.css
+.gd
+README.md
+LICENSE
+apache-config.conf
+Dockerfile
+.dockerignore
+docker-entrypoint.sh
