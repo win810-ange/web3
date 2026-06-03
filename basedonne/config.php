@@ -2,7 +2,7 @@
 // db.php
 
 // Railway injects these environment variables automatically
-$host = getenv('MYSQLHOST') ?: 'mysql.raillway.internal';
+$host = getenv('MYSQLHOST') ?: 'shortline.proxy.rlwy.net';
 $port = getenv('MYSQLPORT') ?: '3306';
 $dbname = getenv('MYSQLDATABASE') ?: 'railway';
 $user = getenv('MYSQLUSER') ?: 'root';
