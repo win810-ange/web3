@@ -1,21 +1,11 @@
 <?php
 
-$databaseUrl = getenv('MYSQL_PUBLIC_URL');
+$host = getenv('MYSQL_HOST') ?: 'shortline.proxy.rlwy.net';
+$port = getenv('MYSQL_PORT') ?: '3306';
+$dbname = getenv('MYSQL_DATABASE') ?: 'railway';
+$user = getenv('MYSQLUSER') ?: 'root';
+$password = getenv('MYSQL_PASSWORD') ?: 'GjuJdPzwOtsaPbRgNEjItijqatwNDezh';
 
-if ($databaseUrl) {
-    $parts = parse_url($databaseUrl);
-    $host = $parts['host'] ?? '';
-    $port = $parts['port'] ?? '3306';
-    $dbname = ltrim($parts['path'] ?? '', '/');
-    $user = $parts['user'] ?? '';
-    $password = $parts['pass'] ?? '';
-} else {
-    $host = getenv('MYSQLHOST') ?: 'shortline.proxy.rlwy.net';
-    $port = getenv('MYSQLPORT') ?: '43045';
-    $dbname = getenv('MYSQLDATABASE') ?: 'railway';
-    $user = getenv('MYSQLUSER') ?: 'root';
-    $password = getenv('MYSQLPASSWORD') ?: 'GjuJdPzwOtsaPbRgNEjItijqatwNDezh';
-}
 
 $dsn = "mysql:host=$host;port=$port;dbname=$dbname;charset=utf8mb4";
 
