@@ -20,5 +20,5 @@ try {
 } catch (PDOException $e) {
     // Hide sensitive system details from production users
     error_log($e->getMessage());
-    die("Database connection failed.");
+    ddie($e->getMessage());
 }
