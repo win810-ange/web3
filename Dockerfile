@@ -7,6 +7,9 @@ RUN apt-get update && apt-get install -y \
 
 RUN docker-php-ext-install pdo_mysql mysqli mbstring gd
 
+RUN rm -f /etc/apache2/mods-enabled/mpm_*.load /etc/apache2/mods-enabled/mpm_*.conf \
+    && a2enmod mpm_prefork
+
 RUN a2enmod rewrite headers
 
 WORKDIR /var/www/html
