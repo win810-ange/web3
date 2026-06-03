@@ -13,8 +13,8 @@ try {
     $pdo = new PDO($dsn, $user, $password, [
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-        PDO::MYSQL_ATTR_SSL_CA => true,
-        PDO::MYSQL_ATTR_SSL_VERIFY_SERVER_CERT => false,
+        1009 => true,
+        1014 => false,
     ]);
 } catch (PDOException $e) {
     die('Erreur de connexion : ' . $e->getMessage());
