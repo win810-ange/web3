@@ -111,25 +111,25 @@
 
       <div class="mb-3">
         <label for="departement" class="form-label">Département</label>
-        <select class="form-select" id="departement" name="departement" value="<?=$resultats['departement'] ?>">
-          <option selected>Choisir...</option>
-          <option value="Orientation scolaire et professionnelle">Orientation scolaire et professionnelle</option>
-          <option value="Gestion et administration des institutions scolaires et de la formation">Gestion et administration des institutions scolaires et de la formation</option>
-          <option value="Histoire, sciences sociales et gestion du patrimoine">Histoire, sciences sociales et gestion du patrimoine</option>
-          <option value="Français et langues africaines">Français et langues africaines</option>
-          <option value="Anglais et cultures africaines">Anglais et cultures africaines</option>
+        <select class="form-select" id="departement" name="departement">
+          <option value="">Choisir...</option>
+          <option value="Orientation scolaire et professionnelle" <?= $resultats['departement'] == 'Orientation scolaire et professionnelle' ? 'selected' : '' ?>>Orientation scolaire et professionnelle</option>
+          <option value="Gestion et administration des institutions scolaires et de la formation" <?= $resultats['departement'] == 'Gestion et administration des institutions scolaires et de la formation' ? 'selected' : '' ?>>Gestion et administration des institutions scolaires et de la formation</option>
+          <option value="Histoire, sciences sociales et gestion du patrimoine" <?= $resultats['departement'] == 'Histoire, sciences sociales et gestion du patrimoine' ? 'selected' : '' ?>>Histoire, sciences sociales et gestion du patrimoine</option>
+          <option value="Français et langues africaines" <?= $resultats['departement'] == 'Français et langues africaines' ? 'selected' : '' ?>>Français et langues africaines</option>
+          <option value="Anglais et cultures africaines" <?= $resultats['departement'] == 'Anglais et cultures africaines' ? 'selected' : '' ?>>Anglais et cultures africaines</option>
         </select>
       </div>
 
       <div class="mb-3">
-        <label for="niveau" class="form-label" value="<?=$resultats['niveau'] ?>">Niveau</label>
+        <label for="niveau" class="form-label">Niveau</label>
         <select class="form-select" id="Niveau" name="niveau">
-          <option selected>Choisir...</option>
-          <option value="L1">L1</option>
-          <option value="L2">L2</option>
-          <option value="L3">L3</option>
-          <option value="M1">M1</option>
-          <option value="M2">M2</option>
+          <option value="">Choisir...</option>
+          <option value="L1" <?= $resultats['niveau'] == 'L1' ? 'selected' : '' ?>>L1</option>
+          <option value="L2" <?= $resultats['niveau'] == 'L2' ? 'selected' : '' ?>>L2</option>
+          <option value="L3" <?= $resultats['niveau'] == 'L3' ? 'selected' : '' ?>>L3</option>
+          <option value="M1" <?= $resultats['niveau'] == 'M1' ? 'selected' : '' ?>>M1</option>
+          <option value="M2" <?= $resultats['niveau'] == 'M2' ? 'selected' : '' ?>>M2</option>
         </select>
       </div>
       </div>

@@ -4,7 +4,7 @@
         $nom = $_POST['username'];
         $motdepasse = $_POST['motdepasse'];
         if ($nom == "administrateur" && $motdepasse == "willy1234willy"){
-            $_SESSION['username'] = "admnistrateur";
+            $_SESSION['username'] = "administrateur";
             header('location:Etudians.php');
 
         } else {

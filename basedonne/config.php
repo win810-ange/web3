@@ -1,6 +1,6 @@
 <?php
 
-$databaseUrl = getenv('DATABASE_URL');
+$databaseUrl = getenv('MYSQL_PUBLIC_URL');
 
 if ($databaseUrl) {
     $parts = parse_url($databaseUrl);

@@ -36,7 +36,7 @@
                     <a class="nav-link" href="../index.php">Accueil</a>
                 </li>
                 <li class="nav-items">
-                        <a href="pages/Etudians.php" class="nav-link">Liste d'Etudiant</a>
+                        <a href="./Etudians.php" class="nav-link">Liste d'Etudiant</a>
                     </li>
                     <li class="nav-item">
                         <a href="./historique.php" class="nav-link">Historique</a>
@@ -94,9 +94,9 @@
                 <td><?= $resultat['prenom']; ?></td>
                 <td><?= $resultat['email']; ?></td>
                 <td><?= $resultat['telephone'] ?></td>
-                <td><?= $resultat['telephone'] ?></td>
                 <td><?= $resultat['Faculte'] ?></td>
                 <td><?= $resultat['departement'] ?></td>
+                <td><?= $resultat['niveau'] ?></td>
                 <td>
                     <a class="btn btn-primary btn-lg" href="edit.php?id=<?=$resultat['id']?>">Modifier</a>
                 </td>

@@ -18,9 +18,8 @@
         'departement'=>$departement, 
         'niveau'=>$niveau
     ]);
-      echo '<script>
-            alrert("dossier enregistrer avec succés")
-      </script>';
+      header('location:felicitation.php');
+      exit;
 
     }
     
