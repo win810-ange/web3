@@ -1,10 +1,10 @@
 <?php
 
-$host = getenv('MYSQL_HOST') ?: 'shortline.proxy.rlwy.net';
-$port = getenv('MYSQL_PORT') ?: '3306';
-$dbname = getenv('MYSQL_DATABASE') ?: 'railway';
-$user = getenv('MYSQLUSER') ?: 'root';
-$password = getenv('MYSQL_PASSWORD') ?: 'GjuJdPzwOtsaPbRgNEjItijqatwNDezh';
+$host = 'shortline.proxy.rlwy.net';
+$port = '3306';
+$dbname = 'railway';
+$user = 'root';
+$password = 'GjuJdPzwOtsaPbRgNEjItijqatwNDezh';
 
 
 $dsn = "mysql:host=$host;port=$port;dbname=$dbname;charset=utf8mb4";
