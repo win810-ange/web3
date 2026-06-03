@@ -7,7 +7,9 @@ RUN apt-get update && apt-get install -y \
 
 RUN docker-php-ext-install pdo_mysql mysqli mbstring gd
 
-RUN a2dismod mpm_event mpm_worker 2>/dev/null || true
+RUN a2dismod mpm_event 2>/dev/null; \
+    a2dismod mpm_worker 2>/dev/null; \
+    a2enmod mpm_prefork
 
 RUN a2enmod rewrite headers
 
